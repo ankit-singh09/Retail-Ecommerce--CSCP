@@ -1,4 +1,5 @@
 # Retail-Ecommerce---Customer-Segmentation-and-Churn-Prediction
+#Project Structure
 ```
 Retail-Ecommerce--CSCP/
 │
