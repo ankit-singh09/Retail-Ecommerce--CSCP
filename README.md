@@ -1,5 +1,5 @@
 # Retail-Ecommerce---Customer-Segmentation-and-Churn-Prediction
-Retail-Ecommerce--CSCP/
+'''Retail-Ecommerce--CSCP/
 │
 ├── data/
 │   ├── raw/
@@ -30,4 +30,4 @@ Retail-Ecommerce--CSCP/
 │
 ├── requirements.txt
 ├── README.md
-└── .gitignore
+└── .gitignore'''
