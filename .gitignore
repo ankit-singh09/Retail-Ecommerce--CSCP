@@ -76,3 +76,6 @@ data/*
 # OS
 .DS_Store
 Thumbs.db
+
+
+project_file
