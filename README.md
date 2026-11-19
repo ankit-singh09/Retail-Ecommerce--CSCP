@@ -66,3 +66,8 @@ Retail-Ecommerce--CSCP/
 
 --------
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+## Data Decisions
+
+- Guest transactions (~22% of rows have no Customer ID) are kept and flagged, but excluded from RFM, clustering and churn. Customer IDs are never fabricated.
+- The cleaning pipeline drops 3.94% of raw rows, within the 5% limit.
