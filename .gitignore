@@ -1,4 +1,4 @@
-﻿# Byte-compiled / optimized / DLL files
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
@@ -64,10 +64,11 @@ docs/_build/
 .ipynb_checkpoints/
 */.ipynb_checkpoints/*
 
-# Data files (keep subfolders tracked via .gitkeep)
+# Data files (keep subfolders tracked via .gitkeep; ignore >100MB uncompressed interim CSVs)
 data/*
 !data/*/
 !data/**/.gitkeep
+data/interim/*.csv
 
 # Models
 # models/*.pkl
