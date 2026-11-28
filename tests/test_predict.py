@@ -32,6 +32,13 @@ class TestPredictModule(unittest.TestCase):
         self.assertEqual(assign_risk_tier(0.55), "Medium Risk")
         self.assertEqual(assign_risk_tier(0.20), "Low Risk")
 
+    def test_risk_tier_boundaries(self):
+        """Verify the exact cut-offs: 0.40 starts Medium, 0.70 starts High."""
+        self.assertEqual(assign_risk_tier(0.3999), "Low Risk")
+        self.assertEqual(assign_risk_tier(0.40), "Medium Risk")
+        self.assertEqual(assign_risk_tier(0.6999), "Medium Risk")
+        self.assertEqual(assign_risk_tier(0.70), "High Risk")
+
     def test_predict_churn_output(self):
         """Verify inference output structure and ranges."""
         preds = predict_churn(self.sample_df, model_path=MODEL_PATH)
